@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Sergey Korotkov</title>
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="card_header">
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="nav-link" href="#summary">Summary</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#examples">Code examples</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#languages">Languages</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <div class="logo">
+          <img class="avatar" src="assets/img/foto.png" alt="">
+        </div>
+        <div class="position">
+          <h1>Sergey Korotkov</h1>
+          <h2>Junior frontend developer</h2>
+        </div>
+        <div class="contacts" id="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-items">
+              <img class="social" src="assets/img/house.svg" alt="">
+              <p><b>Location: </b>Russia, Ryazan</p>
+            </li>
+            <li class="contacts-items">
+              <img class="social" src="assets/img/telephone.svg" alt="">
+              <p><b>Phone: </b>+7 952 121 70 83</p>
+            </li>
+            <li class="contacts-items">
+              <img class="social" src="assets/img/e-mail.svg" alt="">
+              <p><b>E-mail: </b><a class="social-link" href="mailto:sergeykorot49@gmail.com">sergeykorot49@gmail.com</a></p>
+            </li>
+          </ul>
+          <ul class="contacts-list">
+            <li class="contacts-items">
+              <img class="social" src="assets/img/telegram.svg" alt="">
+              <p><b>Telegram: </b><a class="social-link" href="https://t.me/sergeyKorotkov3">@sergeyKorotkov3</a></p>
+            </li>
+            <li class="contacts-items">
+              <img class="social" src="assets/img/github.svg" alt="">
+              <p><b>GitHub: </b><a class="social-link" href="https://github.com/korsergey">korsergey</a></p>
+            </li>
+            <li class="contacts-items">
+              <img class="social" src="assets/img/discord.svg" alt="">
+              <p><b>Discord: </b>korsergey#3161</p>
+            </li>
+          </ul>
+          <ul class="contacts-list">
+            <li class="contacts-items">
+              <img class="social" src="assets/img/codewars.svg" alt="">
+              <p><b>Codewars: </b><a class="social-link" href="https://www.codewars.com/users/korsergey">korsergey</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="card_main">
+    <section id="summary">
+      <div class="container">
+        <div class="card summary">
+          <h2>Summary</h2>
+          <p>I like to code and learn new things. I hope on this course to get the necessary knowledge to work as a frontend developer.</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <div class="card skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git/GitHub</li>
+            <li>Framework Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="container">
+        <div class="card education">
+          <h2>Educational courses:</h2>
+          <ul>
+            <li>
+              <a href="https://stepik.org/course/38218/syllabus">HTML and CSS (Stepik)</a>
+            </li>
+            <li>
+              <a href="https://stepik.org/course/52164/syllabus">HTML and CSS Basics (Stepik)</a>
+            </li>
+            <li>
+              <a href="https://code-basics.com/languages/html">HTML for beginners (Code-basics)</a>
+            </li>
+            <li>
+              <a href="https://stepik.org/course/2223/syllabus">JavaScript for beginners (Stepik)</a>
+            </li>
+            <li>
+              <a href="https://code-basics.com/languages/javascript">JavaScript for beginners (Code-basics)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="examples">
+      <div class="container">
+        <div class="card examples">
+          <h2>Code examples:</h2>
+          <p><b>Example 1.</b> Implement the filterString () function, which
+            accepts a string and a character as input, and returns a new
+            string in which the passed character has been deleted in all its
+            positions.</p>
+          <div class="code">
+            <pre><code>
+  const filterString = (str, simbol) =&gt; {
+    let i = 0;
+    let result = '';
+   while (i &lt; str.length) {
+      if (str[i] !== simbol) {
+        result = result + str[i];
+      }
+    i++;
+    }
+  return result;
+  }
+            </code></pre>
+          </div>
+          <p><b>Example 2.</b> The numbers a and b are given. Print a string
+            with numbers from a to b separated by spaces. It is known that b
+            is greater than a.</p>
+          <div class="code">
+            <pre><code>
+  function testCycle(a, b) {
+    var x = '';
+    b &gt; a;
+    for (let i = a;i &lt;= b; i++) {
+      x = x + ' ' + i;
+    }
+  return x;
+  }
+            </code></pre>
+          </div>
+          <p>Other examples and projects can be viewed on <a class="social-link-code"
+              href="https://www.codewars.com/users/korsergey">Codewars</a> and <a class="social-link-anim"
+              href="https://github.com/korsergey"><span>GitHub</span></a>.</p>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="container lang">
+        <div class="card languages">
+          <h2>Languages:</h2>
+          <ul>
+            <li>Russian - Native;</li>
+            <li>English - Beginner.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="card_footer">
+    <div class="container footer">
+      <p><a aria-label="" href="https://github.com/korsergey">© 2022 Korotkov <img class="icon-footer"
+        src="assets/img/github-footer.svg" alt=""></a></p>
+      <p><a aria-hidden="true" href="https://rs.school/js/"><img class="icon-footer-rs" src="assets/img/rs_school_js.svg" alt=""></a></p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
